@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{  
+    font-family: 'Lato', sans-serif;
+}
+header{
+    background-color: #f6f9f9;
+    padding: 10px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #2d3950;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-left: 35px;
+    line-height: 24px;
+    font-weight: 900;
+}
+.navbar-light .navbar-toggler {
+    color: #15a4fa;
+    border-color: rgba(0,0,0,.1);
+}
+.banner{
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.height{
+    min-height: 90vh;
+    align-items: center;
+}
+.banner h1{
+
+color: #fff;
+
+font-size: 110px;
+
+text-transform: uppercase;
+
+font-weight: 700;
+
+}
+.banner span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #15a4fa;
+}
+.banner p{
+
+margin: 0;
+
+color: #fff;
+
+font-size: 20px;
+
+line-height: 24px;
+
+margin: 30px 0;
+font-weight: 300;
+}
+
+.btn-action{
+
+border: 1px solid #15a4fa;
+
+padding: 0;
+
+padding: 12px 36px;
+
+color: #fff;
+text-transform: capitalize;
+margin-top: 50px;
+}
+.btn-action:hover{
+    color: #fff;
+    background-color:#15a4fa;
+}
+.icon{
+    
+color: #fff;
+    
+font-size: 30px;
+    
+position: absolute;
+    
+top: 80%;
+    
+left: 50%;
+    
+transform: translateX(-50%);
+animation: updown 1s linear infinite;
+animation-direction: alternate;
+}
+@keyframes updown{
+    0%{
+        top:80%
+    }
+    100%{
+        top:87%
+    }
+}
+.simple{
+    text-align: center;
+    background-color: #f6f9f9;
+    padding: 100px 0;
+    
+}
+.simple h2{
+    color: #2d3950;
+    font-size: 45px;
+    font-weight: 500;
+}
+.simple p {
+    font-size: 22px;
+    color: #2d3950;
+    color: #999999;
+    line-height: 30px;
+    font-weight: 400;
+}
+.feature{
+
+padding: 50px 0;
+
+text-align: center;
+}
+.feature-icon{
+
+height: 100px;
+
+width: 100px;
+
+
+background: #48baff; 
+background: -moz-linear-gradient(left,  #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%); 
+background: -webkit-linear-gradient(left,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); 
+background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); 
+
+display: flex;
+
+align-items: center;
+
+margin: auto;
+
+justify-content: center;
+color: #fff;
+font-size: 40px;
+}
+.feature h2{
+
+font-size: 32px;
+
+color: #2d3950;
+
+font-weight: 700;
+
+text-transform: capitalize;
+margin-top: 25px;
+}
+.feature p{
+
+font-size: 21px;
+
+font-weight: 300;
+
+color: #999999;
+}
+.feature-item{
+    padding: 30px 0;
+}
+.feature-item:hover{
+    background-color: #f6f9f9;
+}
+.showcase{
+    text-align: center;
+    background-color: #f6f9f9;
+    padding-bottom: 50px;
+}
+.showcase h2{
+    text-transform: capitalize;
+    font-size: 40px ;
+    color: #2d3950;
+    font-weight: 400;
+    padding-top: 60px;
+}
+.showcase p{
+    color: #999999;
+    font-size: 20px;
+    padding-bottom: 35px;
+}
+.gallery{
+    position: relative;
+    margin: 15px 0;
+}
+.gallery img{
+    width: 100%;
+}
+.gallery::before{
+    content: '';
+    position: absolute;
+    height: 0%;
+    top: 50%;
+    left: 50%;
+    width: 0%;
+    background-color: #23a1f0;
+    transition: .4s all ease-in-out;
+    transform: translate(-50%, -50%);
+    opacity: .7;
+    
+}
+.gallery:hover::before{
+    height: 100%;
+    width: 100%;
+}
+.gallery-info{
+    opacity: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .4s all ease-in-out;
+}
+.gallery-info ul{
+
+list-style: none;
+
+padding: 0;
+
+margin: 0;
+
+display: flex;
+
+justify-content: space-between;
+
+width: 75px;
+}
+.gallery-info ul li{
+
+height: 30px;
+
+width: 30px;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+border: 2px solid #fff;
+
+border-radius: 3px;
+
+padding: 0 15px;
+}
+.gallery-info ul li a{
+    
+color: #fff;
+}
+.gallery:hover .gallery-info{
+    opacity: 1;
+    top: 50%;
+}
+.bannertow {
+    background-image:linear-gradient(#2c384ce3, #2c384ce3), url(../images/Contact-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+  .bannertow h1 {
+    font-size: 41px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+
+  /* Tanvir Hasan Akash */
+  .bannertow p {
+    color: #999999;
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 10px;
+  }
+  form input {
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 15px;
+    background-color: transparent;
+    border: 2px #999999 solid;
+    color: #999999;
+    font-size: 15px;
+    text-transform: capitalize;
+    border-radius: 3px;
+  }
+  form input.message {
+    padding-bottom: 100px;
+  }
+  .form-tow {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-tow p {
+    width: 68%;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  .btn-sand {
+    font-size: 18px;
+    padding: 8px 40px;
+    color: #fff;
+    border: 2px solid #15a4fa;
+    text-transform: capitalize;
+    margin-top: 12px;
+  }
+  .btn-sand:hover {
+    color: #fff;
+    background-color: #15a4fa;
+    box-shadow: 1px #fff;
+  }
+  .checkbox {
+    margin-top: 25px;
+    width: 3%;
+  }
+  footer {
+    background-color: #f6f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px ;
+  }
+footer p {
+    /* margin-top: 0; */
+    color: #999999;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 0 40px;
+}
+.footer-icon {
+ 
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.footer-icon a i {
+    width: 40px;
+    height: 40px;
+    background-color: #15a4fa;
+    color: #fff;
+    border: 2px solid #15a4fa;
+    border-radius: 10%;
+    margin: 0px 4px;
+    padding: 10px;
+}
+
+.terms{
+    width: 60%;
+}
+
+   .terms ul{
+
+list-style: none;
+
+display: flex;
+
+justify-content: space-between;
+
+}
+   .terms ul li{
+
+color: #626262;
+
+text-transform: capitalize;
+
+}
